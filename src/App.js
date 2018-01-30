@@ -32,7 +32,7 @@ export default class Calculator extends React.Component {
 	}
 	evaluateExpression() {
 		const currentExp = this.state.tval;
-		console.log(`Exp: ${currentExp} and of type: ${typeof(currentExp)}`);
+		// console.log(`Exp: ${currentExp} and of type: ${typeof(currentExp)}`);
 		const result = this.eval.exec(currentExp);
 		this.setState({result});
 	}
